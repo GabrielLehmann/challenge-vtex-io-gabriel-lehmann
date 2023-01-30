@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.container {
+  display: flex;
+  font-size: 14px;
+  color: #929292;
+  margin: 0 40px;
+}
+.container .homeIcon {
+  height: 0;
+  display: none;
+}
+.container .homeLink::before {
+  content: "Home";
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.container .link--1 {
+  font-size: 0;
+}
+.container .link--1::before {
+  content: "Sapatos";
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 7px;
+}
+.container .link--2 {
+  font-size: 0;
+}
+.container .link--2::before {
+  content: "Sandália";
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 7px;
+}
+.container .termArrow,
+.container .term {
+  display: none;
+}

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  font-size: 14px;
+  color: #929292;
+  margin: 0 40px;
+  .homeIcon {
+    height: 0;
+    display: none;
+  }
+
+  .homeLink {
+    &::before {
+      content: "Home";
+      font-family: "Open sans", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  .link--1 {
+    font-size: 0;
+    &::before {
+      content: "Sapatos";
+      font-family: "Open sans", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 7px;
+    }
+  }
+
+  .link--2 {
+    font-size: 0;
+    &::before {
+      content: "Sandália";
+      font-family: "Open sans", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 7px;
+    }
+  }
+
+  .termArrow,
+  .term {
+    display: none;
+  }
+}
