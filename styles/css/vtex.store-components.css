@@ -7,6 +7,29 @@
 */
 /* Media Query M3 */
 /* Grid breakpoints */
-.newsletter {
-  background: red;
+.carouselContainer {
+  margin-left: 40px;
+}
+.carouselContainer:global(.vtex-store-components-3-x-productImagesGallerySlide) {
+  margin: unset;
+}
+
+.productImageTag--main {
+  width: unset !important;
+  height: 664px !important;
+}
+
+.thumbImg {
+  border-radius: 8px;
+  max-width: 90px;
+  max-height: 90px;
+}
+.thumbImg--video {
+  width: 90px;
+  height: 90px;
+}
+
+.productImagesThumb {
+  width: fit-content !important;
+  margin-right: 16px;
 }
