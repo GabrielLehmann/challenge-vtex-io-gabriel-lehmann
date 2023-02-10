@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useProduct } from "vtex.product-context";
 import PixImage from "./PixImage";
 import Style from "./styles.css";
+import "./globalStyles.css";
 
 const PixComponents = () => {
   const [pixValue, setPixValue] = useState(0);
