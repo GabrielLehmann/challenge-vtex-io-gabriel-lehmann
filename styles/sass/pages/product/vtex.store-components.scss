@@ -1,3 +1,29 @@
-.newsletter{
-    background: red;
+// left side
+
+.carouselContainer {
+  margin-left: 40px;
+  &:global(.vtex-store-components-3-x-productImagesGallerySlide) {
+    margin: unset;
+  }
+}
+
+.productImageTag--main {
+  width: unset !important;
+  height: 664px !important;
+}
+
+.thumbImg {
+  border-radius: 8px;
+  max-width: 90px;
+  max-height: 90px;
+
+  &--video {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.productImagesThumb {
+  width: fit-content !important;
+  margin-right: 16px;
 }

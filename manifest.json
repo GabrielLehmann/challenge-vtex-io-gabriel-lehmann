@@ -15,7 +15,6 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "agenciamagma.store-theme": "5.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
