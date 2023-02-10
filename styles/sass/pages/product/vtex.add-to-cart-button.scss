@@ -1,0 +1,12 @@
+.buttonText--add-to-cart-button {
+  position: relative;
+  color: black;
+  &::before {
+    content: "ADICIONAR À SACOLA";
+    position: absolute;
+    right: 15px;
+    top: 1px;
+    display: block;
+    color: white;
+  }
+}
