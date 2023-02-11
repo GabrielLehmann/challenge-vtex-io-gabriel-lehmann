@@ -5,7 +5,7 @@
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true
     },
-    "children": ["product-selling-price"]
+    "children": ["html#selling-price"]
   },
 
   "flex-layout.row#list-price-savings": {
@@ -17,5 +17,12 @@
       "marginTop": 5
     },
     "children": ["product-list-price", "product-price-savings"]
+  },
+
+  "html#selling-price": {
+    "props": {
+      "testId": "product-price"
+    },
+    "children": ["product-selling-price"]
   }
 }
