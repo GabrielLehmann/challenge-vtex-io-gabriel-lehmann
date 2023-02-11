@@ -7,8 +7,41 @@
       "tab-layout#description",
       // "flex-layout.row#specifications-title",
       // "product-specification-group#table",
-      "shelf.relatedProducts",
+      // "shelf.relatedProducts",
+      "rich-text#carousel-title",
+      "list-context.product-list#carousel",
       "product-questions-and-answers"
+    ]
+  },
+
+  "rich-text#carousel-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Você também pode gostar:"
+    }
+  },
+
+  "slider-layout#carousel-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
+  },
+
+  "list-context.product-list#carousel": {
+    "children": ["slider-layout#carousel-slider"],
+    "blocks": ["product-summary.shelf#carousel-shelf"]
+  },
+
+  "product-summary.shelf#carousel-shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
     ]
   },
 
