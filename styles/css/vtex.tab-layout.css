@@ -1,0 +1,34 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.listContainer {
+  border-bottom: solid 1px #b9b9b9;
+  justify-content: space-between;
+  padding: 0 64px;
+  margin-bottom: 32px;
+}
+
+.listContainer :global(.vtex-button) {
+  border: 0;
+  background-color: transparent;
+  color: #b9b9b9;
+}
+
+.listItemActive {
+  border-bottom: solid 2px black;
+  margin-bottom: unset;
+}
+
+.listItemActive :global(.vtex-button) {
+  color: black;
+}
+
+.container {
+  margin: 0 40px;
+}

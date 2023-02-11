@@ -3,12 +3,9 @@
     "props": {
       "colGap": 2,
       "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "preventHorizontalStretch": true
     },
-    "children": [
-      "product-selling-price"
-    ]
+    "children": ["html#selling-price"]
   },
 
   "flex-layout.row#list-price-savings": {
@@ -19,9 +16,13 @@
       "marginBottom": 2,
       "marginTop": 5
     },
-    "children": [
-      "product-list-price",
-      "product-price-savings"
-    ]
+    "children": ["product-list-price", "product-price-savings"]
+  },
+
+  "html#selling-price": {
+    "props": {
+      "testId": "product-price"
+    },
+    "children": ["product-selling-price"]
   }
 }

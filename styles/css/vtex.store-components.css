@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 0 - 600PX: Phone
 600 - 900px: Table portrait
@@ -7,6 +8,341 @@
 */
 /* Media Query M3 */
 /* Grid breakpoints */
-.newsletter {
-  background: red;
+.carouselContainer:global(.vtex-store-components-3-x-productImagesGallerySlide) {
+  margin: unset;
+}
+
+.productImagesGallerySlide {
+  width: 57vw !important;
+}
+
+.productImageTag--main {
+  width: unset !important;
+  height: 664px !important;
+}
+
+.thumbImg {
+  border-radius: 8px;
+  max-width: 90px;
+  max-height: 90px;
+}
+.thumbImg--video {
+  width: 90px;
+  height: 90px;
+}
+
+.productImagesThumb {
+  width: fit-content !important;
+  margin-right: 16px;
+}
+
+.productBrand--quickview {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
+  color: #575757;
+}
+
+.productNameContainer--quickview {
+  text-align: end;
+  margin-bottom: 8px;
+}
+
+.skuSelectorContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.skuSelectorInternalBox {
+  border-radius: 24px;
+}
+
+.skuSelectorItem {
+  height: 40px;
+  width: 40px;
+}
+
+.valueWrapper {
+  color: #989898;
+  padding: unset;
+}
+
+.diagonalCross {
+  transform: rotateY(180deg) scale(0.75);
+  color: #989898;
+}
+
+.frameAround {
+  border-radius: 24px;
+  border-color: black;
+}
+
+.skuSelectorName {
+  position: relative;
+  color: white;
+}
+.skuSelectorName::before {
+  content: "OUTRAS CORES:";
+  background-color: white;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #929292;
+}
+
+.skuSelectorSubcontainer--tamanho .skuSelectorName::before {
+  content: "OUTROS TAMANHOS:";
+  background-color: white;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #929292;
+}
+
+.shippingContainer {
+  position: relative;
+}
+.shippingContainer :global(.vtex-input__label) {
+  margin-top: 16px;
+}
+.shippingContainer :global(.vtex-input__label)::before {
+  content: "CALCULAR FRETE:";
+  background-color: white;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #929292;
+}
+.shippingContainer :global(.vtex-button) {
+  z-index: 1000;
+  border-radius: 0;
+  border: unset;
+  position: absolute;
+  background-color: black;
+  color: transparent;
+  left: 231px;
+  top: 24px;
+  width: 49px;
+  height: 49px;
+}
+.shippingContainer :global(.vtex-button)::before {
+  content: "OK";
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.shippingContainer :global(.vtex-address-form-4-x-input) {
+  width: 100%;
+}
+.shippingContainer :global(.vtex-address-form-4-x-input):focus {
+  z-index: 999;
+}
+.shippingContainer :global(.vtex-address-form-4-x-input):not(:empty) {
+  z-index: 999;
+}
+.shippingContainer :global(.vtex-input-prefix__group) {
+  border-radius: 0;
+  color: #cccccc;
+  width: 280px;
+  height: 49px;
+}
+.shippingContainer :global(.vtex-input-prefix__group)::before {
+  content: "Digite seu CEP";
+  position: absolute;
+  padding: 16px 16.5px 0;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #afafaf;
+}
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
+  position: absolute;
+  top: 24px;
+  left: 312px;
+}
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) :first-child {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.shippingContainer :global(.vtex__icon-external-link) {
+  display: none;
+}
+
+.shippingTable {
+  display: grid;
+  flex-direction: column;
+  border: unset;
+  padding: unset;
+  margin: unset;
+  gap: 15px;
+}
+.shippingTable :global(.vtex-store-components-3-x-shippingTableRow) {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 110px 110px 110px;
+}
+.shippingTable :global(.vtex-store-components-3-x-shippingTableRow) :nth-child(even) {
+  order: 4;
+}
+
+.shippingTableHead {
+  display: grid;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #202020;
+}
+
+.shippingTableRadioBtn {
+  display: none;
+}
+
+.shippingTableCellDeliveryName {
+  display: grid;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #afafaf;
+  padding: unset;
+}
+
+.shippingTableCellDeliveryEstimate {
+  display: grid;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #afafaf;
+  padding: unset;
+}
+
+.shippingTableCellDeliveryPrice {
+  display: grid;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #afafaf;
+  padding: unset;
+}
+
+.title {
+  color: transparent;
+  position: relative;
+}
+.title::before {
+  content: "Digite seu CEP";
+  background-color: #ffffff;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #868686;
+}
+
+.subscribeLabel {
+  color: transparent;
+  position: relative;
+}
+.subscribeLabel::before {
+  content: "Deseja saber quando estiver disponível?";
+  background-color: #ffffff;
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #868686;
+}
+
+.submit :global(.vtex-button) {
+  width: 100%;
+  color: transparent;
+  position: relative;
+  background-color: black;
+  border-radius: 0;
+  border-color: black;
+  height: 49px;
+}
+.submit :global(.vtex-button)::before {
+  content: "AVISE-ME";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.content :global(.vtex-styleguide-9-x-input) {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989898;
+}
+
+.content :global(.vtex-input-prefix__group) {
+  border-radius: 0;
+}
+
+.content :global(.vtex-store-components-3-x-submit) {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.content :global(.vtex-store-components-3-x-input) {
+  margin: unset;
+  margin-bottom: 15px;
+}
+
+.content {
+  position: relative;
+  max-width: unset;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productDescriptionTitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #575757;
+}
+
+.productDescriptionText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #929292;
+}
+
+.discountInsideContainer {
+  display: none;
 }

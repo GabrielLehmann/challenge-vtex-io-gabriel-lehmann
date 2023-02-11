@@ -5,5 +5,8 @@
   "html": {
     "component": "html",
     "composition": "children"
+  },
+  "pix-components": {
+    "component": "PixComponents"
   }
 }

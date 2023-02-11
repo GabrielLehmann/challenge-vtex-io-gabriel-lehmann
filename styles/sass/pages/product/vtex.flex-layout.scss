@@ -1,0 +1,24 @@
+.flexRowContent--add-to-cart-button-background {
+  margin: unset;
+
+  :global(.vtex-button) {
+    background-color: black;
+    border-radius: 0;
+    border: 0;
+    height: 49px;
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.flexColChild :global(.vtex-flex-layout-0-x-flexColChild) {
+  display: flex;
+}
+
+.flexRowContent--quantity-and-add-button :global(.vtex-button__label) {
+  padding: unset !important;
+}
+
+.flexRow--product-image-width {
+  margin: 0 40px;
+}
