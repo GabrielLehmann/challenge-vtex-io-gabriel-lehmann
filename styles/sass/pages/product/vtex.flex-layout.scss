@@ -6,7 +6,7 @@
     border-radius: 0;
     border: 0;
     height: 49px;
-    width: 526px;
+    width: 100%;
     margin-left: 10px;
   }
 }
@@ -17,4 +17,8 @@
 
 .flexRowContent--quantity-and-add-button :global(.vtex-button__label) {
   padding: unset !important;
+}
+
+.flexRow--product-image-width {
+  margin: 0 40px;
 }

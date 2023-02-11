@@ -8,9 +8,6 @@
 */
 /* Media Query M3 */
 /* Grid breakpoints */
-.carouselContainer {
-  margin-left: 40px;
-}
 .carouselContainer:global(.vtex-store-components-3-x-productImagesGallerySlide) {
   margin: unset;
 }
